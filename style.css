@@ -104,24 +104,24 @@ table tr td{
     justify-content: center;
     align-items: center;
     bottom: 10px;
-    background-color: rgb(221, 1, 221);
+    background-color: rgb(221, 1, 221, 0.15);
     width: 300px;
     height: 300px;
     border: solid 5px;
     border-style: dashed;
-    border-color: black;
+    border-color: rgb(0, 0, 0, 0.8);
 }
 
 .index-body .hero .index-messi p
 {
     font-size: 35px;
-    color: white;
+    color: rgb(255, 255, 255, 1);
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .index-header
 {
-    background-color: rgba(255, 102, 0, 0.959);
+    background-color: rgba(255, 102, 0, 0.6);
     display: flex;
 }
 
@@ -181,7 +181,7 @@ table tr td{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 102, 0, 0.959);
+    background-color: rgba(255, 102, 0, 0.6);
     position: relative;
     bottom: 0;
 }
