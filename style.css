@@ -1,7 +1,5 @@
-.index-body 
+/* .index-body
 {
-    display: flexbox;
-    -ms-flex-align: center;
     background-color: #f0f0f0;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0; 
@@ -12,9 +10,6 @@
 .index-body .index-messi
 {
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     bottom: 10px;
     background-color: rgb(221, 1, 221, 0.15);
     width: 300px;
@@ -34,14 +29,11 @@
 .index-header
 {
     background-color: rgba(255, 102, 0, 0.6);
-    display: flex;
 }
 
 .index-header .index-content
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 
 .index-header h1
@@ -52,25 +44,18 @@
 
 .index-header .index-content nav
 {
-    display: flex;
-    align-items: center;
-    justify-content: right;
+
+
 }
 
 .index-header .index-content ul
 {
-    display: flex;
-    align-items: end;
-    justify-content: right;
     margin-left:56vw;
 }
 
 .index-header .index-content ul li
 {
     list-style: none;
-    display: flex;
-    justify-content: right;
-    align-items: end;
     margin-right: 35px;
 }
 
@@ -90,9 +75,6 @@
 
 .index-footer
 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: rgba(255, 102, 0, 0.6);
     position: relative;
     bottom: 0;
@@ -100,11 +82,7 @@
 
 .index-body .hero
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    /* background: #333; */
+   dd background: #333; dd
     color: white;
     margin-bottom: 100px;
     position: relative;
@@ -115,22 +93,14 @@
 .index-body .hero .video-bg
 {
     position:fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 120vh;
     z-index: -1;
+    height: 120vh;
 }
 
 .index-body .hero h2
 {
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     top: 30px;
-    justify-content: center;
-    align-items: center;
     
 }
 
@@ -138,3 +108,138 @@
 {
     color: white;
 }
+
+@media screen and (max-width: 800px)
+{
+}
+*/
+.index-body
+{
+    background-color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0; 
+    margin: 0;
+}
+
+.index-body .index-main .index-messi
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(221, 1, 221, 0.15);
+    width: 300px;
+    height: 300px;
+    border: solid 5px;
+    border-style: dashed;
+    border-color: rgb(0, 0, 0, 0.8);
+    margin-top: 325px;
+}
+
+.index-body .index-main .index-messi p
+{
+    font-size: 35px;
+    color: rgb(255, 255, 255, 1);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.index-main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.index-body .index-header
+{
+    display:flow-root;
+    background-color: rgba(255, 102, 0, 0.6);
+}
+
+.index-body .index-header .index-navbar
+{
+    display: flex;
+    justify-content: right;
+    padding: 15px;
+    margin-right: 20px;
+}
+
+.index-body .index-header .index-navbar a
+{
+    margin: 25px;
+    text-decoration: none;    
+    color: white;
+    font-size: 18px;
+}
+
+.index-body .index-header .index-navbar a:hover
+{
+    color: rgb(0, 225, 255);
+    transition: cubic-bezier(0.47, 0, 0.745, 0.715) 0.4s color;
+    cursor: pointer;
+}
+
+.index-body .index-header h1
+{
+    position: absolute;
+    bottom: 91%;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: white;
+}
+
+.index-footer
+{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 102, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    min-width: 100%;
+}
+
+.index-footer .p1
+{
+    color:  white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+.index-body .index-main .hero .video-bg
+{
+    position: fixed;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.index-body .index-main section
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    color: white;
+}
+
+@media screen and (max-width: 910px)
+{
+    .index-body .index-header
+    {
+        flex-direction: column;
+    }
+
+    .index-body .index-header h1
+    {
+        position: inherit;
+        margin-right: 0;
+    }
+}
+
+
+
+
+
